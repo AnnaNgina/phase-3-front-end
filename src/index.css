@@ -45,3 +45,28 @@ a:hover{
   width: 100%;
   background-image: url("/public/logo192.png");
 }
+
+#contact{
+  height: 200px;
+  width: 100%;
+  background-color: rgb(41, 40, 40);
+  bottom: 0;
+  color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+#post-container{
+  height: 400px;
+  width: 100%;
+  background-color: aquamarine;
+}
+
+
+.footer-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
