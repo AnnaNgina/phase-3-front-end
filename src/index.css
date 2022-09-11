@@ -80,3 +80,39 @@ a:hover{
 
   
 }
+input[type=submit] {
+  background-color: rgba(204, 225, 228, 0.664);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: rgb(48, 46, 46);
+  color: rgb(4, 240, 228);
+}
+input[type=text], textarea {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: horizontal;
+  overflow: hidden;
+  border: solid black 1px;
+  
+}
+#contact{
+  width: 98.5%;
+  height: auto;
+  background-color:black;
+  
+}
+form{
+  margin-left:300px ;
+}
