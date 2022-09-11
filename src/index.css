@@ -43,7 +43,7 @@ a:hover{
 #slider{
   height: 400px;
   width: 100%;
-  background-image: url("/public/frt.jpg");
+  background-image: url("/public/pasta.jpg");
   opacity: 0.9;
   
 }
@@ -87,6 +87,7 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+
 }
 input[type=submit]:hover {
   background-color: rgb(48, 46, 46);
