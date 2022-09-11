@@ -45,6 +45,7 @@ a:hover{
   width: 100%;
   background-image: url("/public/pasta.jpg");
   opacity: 0.9;
+
   
 }
 
@@ -77,6 +78,7 @@ a:hover{
   font-size: 20px;
   text-align: right;
   color: black;
+  object-fit: contain;
 
   
 }
