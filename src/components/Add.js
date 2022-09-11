@@ -20,15 +20,15 @@ function Add({onHandleAddPost, setIsFilledIn}){
             body: JSON.stringify(newObj)
         })
         .then((resp) => resp.json())
-        .then((newBlog) => onHandleAddPost(newBlog) )
-        alert("New Post added successfully!");
+        .then((newRecipe) => onHandleAddPost(newRecipe) )
+        alert("New Recipe added successfully!");
     }
     return (
         <div className="posts" style={{margin:"auto", width:'60%', height: 100+"vh", color:"black"}}>
             <h1 style={{textAlign:"center", marginTop: 50 +"px"}}>Add New Post</h1>
             <form className="new-post" onSubmit={handleSubmit}>
             <div className="new-post">
-                    <label >Date: </label>
+                    <label >Name: </label>
                     <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="Name"  onChange={(e)=>setDate(e.target.value)} required/>
                 </div>
             <div className="new-post">
