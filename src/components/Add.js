@@ -14,7 +14,7 @@ function Add({onHandleAddPost, setIsFilledIn}){
             "Ingredients":ingredients,
             
         }
-        fetch("http://localhost:9292/posts", {
+        fetch("http://localhost:9292/recipes", {
             method: "POST",
             headers: {"Content-Type":"application/json"},
             body: JSON.stringify(newObj)
@@ -29,21 +29,21 @@ function Add({onHandleAddPost, setIsFilledIn}){
             <form className="new-post" onSubmit={handleSubmit}>
             <div className="new-post">
                     <label >Date: </label>
-                    <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="Date"  onChange={(e)=>setDate(e.target.value)} required/>
+                    <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="Name"  onChange={(e)=>setDate(e.target.value)} required/>
                 </div>
             <div className="new-post">
                     <label >Author: </label>
                     <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Author"  onChange={(e)=>setAuthor(e.target.value)} required/>
                 </div>
                 <div>
-                    <label for="exampleFormControlInput1" class="form-label">Topic:</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Topic"  onChange={(e)=>setTopic(e.target.value)} required/>
+                    <label for="exampleFormControlInput1" class="form-label">Ingredients:</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ingredients"  onChange={(e)=>setTopic(e.target.value)} required/>
                 </div>
                 <div className="new-post">
                     <label  for="exampleFormControlTextarea1" class="form-label">Content: </label>
                     <textarea type="text" class="form-control" id="exampleFormControlTextarea1" rows="5" onChange={(e)=>setContent(e.target.value)} required/>
                 </div>
-               <button type="submit">Submit New Post</button>
+               <button type="submit">Submit New Recipe</button>
             </form>
         </div>
     )
