@@ -44,7 +44,7 @@ a:hover{
   height: 400px;
   width: 100%;
   background-image: url("/public/pasta.jpg");
-  opacity: 0.9;
+  opacity: 0.6;
 
   
 }
@@ -76,9 +76,10 @@ a:hover{
 .slider-image{
   font-style: italic;
   font-size: 20px;
-  text-align: right;
-  color: black;
+  text-align: center;
+  color:white;
   object-fit: contain;
+  padding:10px;
 
   
 }
