@@ -29,7 +29,7 @@ function Add({onHandleAddPost, setIsFilledIn}){
             <form className="new-post" onSubmit={handleSubmit}>
             <div className="new-post">
                     <label >Name: </label>
-                    <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="Name"  onChange={(e)=>setDate(e.target.value)} required/>
+                    <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Name"  onChange={(e)=>setName(e.target.value)} required/>
                 </div>
             <div className="new-post">
                     <label >Author: </label>
@@ -37,12 +37,9 @@ function Add({onHandleAddPost, setIsFilledIn}){
                 </div>
                 <div>
                     <label for="exampleFormControlInput1" class="form-label">Ingredients:</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ingredients"  onChange={(e)=>setTopic(e.target.value)} required/>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ingredients"  onChange={(e)=>setIngredients(e.target.value)} required/>
                 </div>
-                <div className="new-post">
-                    <label  for="exampleFormControlTextarea1" class="form-label">Content: </label>
-                    <textarea type="text" class="form-control" id="exampleFormControlTextarea1" rows="5" onChange={(e)=>setContent(e.target.value)} required/>
-                </div>
+                
                <button type="submit">Submit New Recipe</button>
             </form>
         </div>
