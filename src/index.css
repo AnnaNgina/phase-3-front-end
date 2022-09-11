@@ -43,7 +43,7 @@ a:hover{
 #slider{
   height: 400px;
   width: 100%;
-  background-image: url("/public/fy.PNG");
+  background-image: url("/public/frt.jpg");
   opacity: 0.9;
   
 }
@@ -72,8 +72,11 @@ a:hover{
   flex-direction: column;
   justify-content: space-around;
 }
-p{
+.slider-image{
   font-style: italic;
   font-size: 20px;
-  text-align: left;
+  text-align: right;
+  color: black;
+
+  
 }
