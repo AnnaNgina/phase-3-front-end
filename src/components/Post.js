@@ -14,8 +14,10 @@ onDelete(posts.id)
                 <p>Name: {post.name}</p>
                 <p>Author: {post.author}</p>
                 <p>Ingredients: {post.ingredients}</p>
-                <button> Edit</button>
+                <div className="add">
+                <button> Edit</button><span></span>
                 <button onClick={handleDelete}>Delete</button>
+                </div>
 
                 </ol>
                 

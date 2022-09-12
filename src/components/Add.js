@@ -46,7 +46,7 @@ function Add({onHandleAddPost, setIsFilledIn}){
                     <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ingredients"  onChange={(e)=>setIngredients(e.target.value)} required/>
                 </div>
                 
-               <button type="submit">Submit New Recipe</button>
+               <button type="submit">Submit</button>
             </form>
         </div>
     )

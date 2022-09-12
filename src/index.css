@@ -128,11 +128,18 @@ form{
   font-size: 1rem;
   margin: 3rem 3rem;
   display: grid;
-  grid-template-columns: 1fr 1fr ;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 2rem;
 }
 .recipe{
   width: 98.5%;
   height: auto;
   background-color:yellow;
+}
+
+button{
+  color:blue;
+  padding:4px;
+  width: 50px;
+  
 }
