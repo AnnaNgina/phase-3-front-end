@@ -1,17 +1,11 @@
 import React, {useEffect, useState }from 'react';
 
 
-function Posts() {
+function Posts({posts,onDelete}) {
+function handleDelete(){
+onDelete(posts.id)
+}
 
-    const [posts, setPosts] = useState ([])
-  useEffect(() => {
-    fetch("http://localhost:9292/recipes")
-    .then((response) => response.json())
-    .then((data) =>{
-      setPosts(data)
-      console.log(data)
-    })
-  },[]);
    return (
     <div className='recipe-container'>
         
@@ -21,7 +15,7 @@ function Posts() {
                 <p>Author: {post.author}</p>
                 <p>Ingredients: {post.ingredients}</p>
                 <button> Edit</button>
-                <button>Delete</button>
+                <button onClick={handleDelete}>Delete</button>
 
                 </ol>
                 

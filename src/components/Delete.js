@@ -1,12 +1,13 @@
 import React from "react";
 
-function Delete({recipes, onDelete}){
-    function handleDeleteClick() {
-        fetch(`http://localhost:9292/recipes${recipes.id}`, {
+function Delete(){
+    function handleDeleteClick(id) {
+        fetch(`http://localhost:9292/recipes${id}`, {
           method: "DELETE",
         })
           .then((resp) => resp.json())
-          .then(() => onDelete(recipes));
+          .then(() => console.log(recipes));
+          
       }
     
       
@@ -16,10 +17,10 @@ function Delete({recipes, onDelete}){
           <span className='body'>{recipes.body}</span>
           </div>
           <div>
-          <button onClick={handleDeleteClick} className="del">Delete</button>
+          <button onClick={()=>handleDeleteClick(recipes.id)} className="del">Delete</button>
         </div>
         </div>
       )
     }
     
-    export default Delete
+    export default Delete;

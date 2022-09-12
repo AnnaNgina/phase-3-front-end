@@ -14,10 +14,16 @@ function Add({onHandleAddPost, setIsFilledIn}){
             "Ingredients":ingredients,
             
         }
+        
+
         fetch("http://localhost:9292/recipes", {
             method: "POST",
             headers: {"Content-Type":"application/json"},
-            body: JSON.stringify(newObj)
+            body: JSON.stringify({
+                name:name,
+                author:author,
+                ingredients:ingredients,
+            })
         })
         .then((resp) => resp.json())
         .then((newRecipe) => onHandleAddPost(newRecipe) )
