@@ -7,8 +7,8 @@ function Nav() {
             </div>
             <div className="nav-bar">
             <li><a href="/">Home</a></li>
-            <li><a href="#posts">Add Recipe</a></li>
-            <li><a href="#footer">About</a></li>
+            <li><a href="#posts">Add Ingredient</a></li>
+            {/* <li><a href="#footer">About</a></li> */}
             </div>
         </nav>
     );
