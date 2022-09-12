@@ -120,21 +120,19 @@ input[type=text], textarea {
 form{
   margin-left:300px ;
 }
-.post-container{
-  border: 2px solid black;
-  margin: 2px;
-  float: left;
-  width: 33.33%;
+.recipe-container{
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1rem;
+  margin: 3rem 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  gap: 2rem;
 }
-.post-container:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
+.recipe{
+  width: 98.5%;
+  height: auto;
+  background-color:yellow;
 }

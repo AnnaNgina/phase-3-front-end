@@ -24,15 +24,15 @@ function Add({onHandleAddPost, setIsFilledIn}){
         alert("New Recipe added successfully!");
     }
     return (
-        <div className="posts" style={{margin:"auto", width:'60%', height: 100+"vh", color:"black"}}>
+        <div className="recipes" style={{margin:"auto", width:'80%', height: 50+"vh", color:"black", backgroundColor:"aquamarine",textAlign:"left"}}>
             <h1 style={{textAlign:"center", marginTop: 50 +"px"}}>Add New Post</h1>
-            <form className="new-post" onSubmit={handleSubmit}>
-            <div className="new-post">
-                    <label >Name: </label>
+            <form className="new-recipe" onSubmit={handleSubmit}>
+            <div className="new-recipe">
+                    <label >Name: </label><br></br>
                     <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Name"  onChange={(e)=>setName(e.target.value)} required/>
-                </div>
-            <div className="new-post">
-                    <label >Author: </label>
+                </div><br></br>
+            <div className="new-recipe">
+                    <label >Author: </label><br></br>
                     <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Author"  onChange={(e)=>setAuthor(e.target.value)} required/>
                 </div>
                 <div>

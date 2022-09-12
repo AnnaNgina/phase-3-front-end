@@ -13,7 +13,8 @@ function Posts() {
     })
   },[]);
    return (
-    <div className='post-container'>
+    <div className='recipe-container'>
+        
               { posts.map((post) => (
                 <ol id={post.id} key={post.id} >
                 <p>Name: {post.name}</p>
@@ -22,6 +23,9 @@ function Posts() {
                 </ol>
             ))}
     </div>
+    
 );
+
               }
+              
 export default Posts;
