@@ -20,7 +20,11 @@ function Posts() {
                 <p>Name: {post.name}</p>
                 <p>Author: {post.author}</p>
                 <p>Ingredients: {post.ingredients}</p>
+                <button> Edit</button>
+                <button>Delete</button>
+
                 </ol>
+                
             ))}
     </div>
     

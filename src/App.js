@@ -7,6 +7,7 @@ import Footer from './components/Footer'
 import Add from './components/Add';
 
 
+
 function App() {
   return (
     <div className="App">
@@ -15,7 +16,7 @@ function App() {
     <Post />
     <Add/>
     <Footer />
-        
+    
     </div>
   );
 }
