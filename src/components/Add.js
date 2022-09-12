@@ -24,7 +24,7 @@ function Add({onHandleAddPost, setIsFilledIn}){
         alert("New Recipe added successfully!");
     }
     return (
-        <div className="recipes" style={{margin:"auto", width:'80%', height: 50+"vh", color:"black", backgroundColor:"aquamarine",textAlign:"left"}}>
+        <div className="recipes" style={{margin:"auto", width:'80%', height: 50+"vh", color:"black", backgroundColor:"aquamarine",textAlign:"left",borderRadius:"20px"}}>
             <h1 style={{textAlign:"center", marginTop: 50 +"px"}}>Add New Post</h1>
             <form className="new-recipe" onSubmit={handleSubmit}>
             <div className="new-recipe">
