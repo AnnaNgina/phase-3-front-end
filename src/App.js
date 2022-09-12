@@ -3,7 +3,7 @@ import './App.css';
 import Nav from './components/Nav'
 import Slider from './components/Slider'
 import Post from './components/Post'
-import Footer from './components/Footer'
+// import Footer from './components/Footer'
 import Add from './components/Add';
 import { useEffect, useState } from 'react';
 
@@ -39,7 +39,7 @@ function App() {
     <Slider />
     <Post posts={posts} onDelete={onDelete}/>
     <Add/>
-    <Footer />
+    {/* <Footer /> */}
     
     
     </div>
