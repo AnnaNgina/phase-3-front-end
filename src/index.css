@@ -120,3 +120,21 @@ input[type=text], textarea {
 form{
   margin-left:300px ;
 }
+.post-container{
+  border: 2px solid black;
+  margin: 2px;
+  float: left;
+  width: 33.33%;
+}
+.post-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}

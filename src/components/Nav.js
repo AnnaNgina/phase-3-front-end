@@ -3,7 +3,7 @@ function Nav() {
     return (
         <nav id="nav-list">
              <div className="logo">
-                <h1>Recipe System</h1>
+                <h1>Ingredient System</h1>
             </div>
             <div className="nav-bar">
             <li><a href="/">Home</a></li>

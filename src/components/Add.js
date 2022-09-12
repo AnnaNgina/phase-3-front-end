@@ -44,5 +44,7 @@ function Add({onHandleAddPost, setIsFilledIn}){
             </form>
         </div>
     )
+    
 }
+
 export default Add;
