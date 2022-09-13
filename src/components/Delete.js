@@ -1,14 +1,7 @@
 import React from "react";
 
 function Delete(){
-    function handleDeleteClick(id) {
-        fetch(`http://localhost:9292/recipes${id}`, {
-          method: "DELETE",
-        })
-          .then((resp) => resp.json())
-          .then(() => console.log(recipes));
-          
-      }
+   
     
       
       return (
