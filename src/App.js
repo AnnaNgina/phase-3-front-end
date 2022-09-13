@@ -1,7 +1,7 @@
 
 import './App.css';
 import Nav from './components/Nav'
-import Slider from './components/Slider'
+import Section from './components/Section';
 import Post from './components/Post'
 // import Footer from './components/Footer'
 import Add from './components/Add';
@@ -36,7 +36,7 @@ function App() {
   return (
     <div className="App">
     <Nav/>
-    <Slider />
+    <Section />
     <Post posts={posts} onDelete={onDelete}/>
     <Add/>
     {/* <Footer /> */}
